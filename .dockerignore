@@ -1,0 +1,61 @@
+# 依赖
+node_modules/
+**/node_modules/
+
+# 环境变量（含密钥）
+.env
+.env.*
+!.env.example
+
+# 数据库
+server/data/*.db
+server/data/*.db-wal
+server/data/*.db-shm
+server/data/*.db-journal
+
+# 上传文件
+server/uploads/
+!server/uploads/.gitkeep
+
+# 备份
+server/backups/
+
+# 构建产物
+web/dist/
+web/.vite/
+
+# Git
+.git/
+.gitignore
+
+# 文档/测试
+*.md
+!README.md
+LICENSE
+docs/
+tests/
+**/*.test.js
+**/*.spec.js
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# 系统
+.DS_Store
+Thumbs.db
+
+# 日志
+*.log
+npm-debug.log*
+
+# Docker
+docker-compose*.yml
+Dockerfile*
+
+# 临时/归档
+web-backup-*/
+_archive/
+.workbuddy/
